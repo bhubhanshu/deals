@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { fetchDeals } from '../redux/ActionCreators';
 import Carousel from './CarouselComponent';
-
-const mapStateToProps = state => {
-    return {
-      deals: state.deals
-    }
-}
-
-const mapDispatchToProps = (dispatch) => ({
-    fetchDeals: () => {dispatch(fetchDeals())}
-  });
-
+import Deals from './DealComponent';
 
 function Header() {
     return (
@@ -56,18 +44,17 @@ function Footer() {
 }
 
 class Main extends Component {
-    componentDidMount() {
-        this.props.fetchDeals();
-    }
     render() {
+        console.log(this.props.deals);
         return( 
             <div id="body">
                 <Header />
                 <Carousel />
+                <Deals deals ={this.props.deals} />
                 <Footer />
             </div>
         );
     }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default withRouter(Main);
