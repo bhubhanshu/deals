@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { fetchDeals } from '../redux/ActionCreators';
+import Carousel from './CarouselComponent';
 
 const mapStateToProps = state => {
     return {
@@ -16,9 +17,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 function Header() {
     return (
-        <div className="container-fluid p-3" id="heading">
+        <div className="container-fluid p-3">
             <div className="row justify-content-center">
-                <h1>Deals from desidime</h1>
+                <h1>Loot Deals</h1>
             </div>
         </div>
     );
@@ -62,6 +63,7 @@ class Main extends Component {
         return( 
             <div id="body">
                 <Header />
+                <Carousel />
                 <Footer />
             </div>
         );
