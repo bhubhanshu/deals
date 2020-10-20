@@ -4,18 +4,25 @@
 }
 body{
   font-family: work;
-  background-color: black;
-  color: white;
+  background-color: #e9eeee;
 }
 .footer{
   margin:0px auto;
   padding: 2rem 0px;
 }
+
 a{
+  color: black;
+}
+a:hover{
+  color: #e21616;
+  text-decoration: none;
+}
+.text-center a{
   padding: 2rem 3rem;
   transform: scale(2);
 }
-a:hover{
+.text-center a:hover{
   text-decoration: none;
   background: linear-gradient(blue, green, yellow);
   -webkit-background-clip: text;
@@ -23,9 +30,19 @@ a:hover{
 }
 h1{
   font-weight: bold;
-  background: linear-gradient(180deg, red, yellow);
+  background: linear-gradient(180deg, red, rgb(216, 11, 243));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.line-clamp{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; 
+}
+.title{
+  -webkit-line-clamp: 1 !important;
 }
 .carousel {
   width:700px;
@@ -35,6 +52,24 @@ h1{
 .carousel img{
   width: 640px;
   height: 360px;
+}
+#card{
+  background-color: white;
+  margin: 2rem;
+  width: 220px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 4px white;
+  transition: all ease-in-out 0.7s;
+}
+#card:hover{
+  transform: scale(1.1);
+}
+.card-img-top{
+  margin: auto;
+  width: auto;
+  max-width: 220px;
+  max-height: 300px;
 }
 @media (max-width: 900px) {
   .carousel {

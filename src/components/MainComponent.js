@@ -47,7 +47,7 @@ class Main extends Component {
     render() {
         console.log(this.props.deals);
         return( 
-            <div id="body">
+            <div class="container-fluid" id="body">
                 <Header />
                 <Carousel />
                 <Deals deals ={this.props.deals} />
