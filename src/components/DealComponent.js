@@ -23,13 +23,13 @@ function RenderDeal(props){
 
 function Deals(props){
     return(
-            <div class="row">
-                {data.map((deal) => {
-                    return(
-                        RenderDeal(deal = {deal})
-                    );
-                })}
-            </div>
+        <div class="row">
+            {data.map((deal) => {
+                return(
+                    RenderDeal(deal = {deal})
+                );
+            })}
+        </div>
     );
 }
 

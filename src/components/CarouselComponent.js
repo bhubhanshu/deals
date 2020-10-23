@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
 
 const items = [
     {
@@ -21,29 +21,31 @@ const items = [
 
 const Carousels = () => {
     return (
-        <Carousel>
-            <Carousel.Item>
-                <a href="https://www.flipkart.com" target="_blank"><img
-                    className="d-block w-100"
-                    src="https://cdn1.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=640,h=360,q=90/ddb/sale/oct20/Flipakrt-The-Big-Billion-Days-Oct-2020-2.jpg"
-                    alt="Flipkart"
-                /></a>
-            </Carousel.Item>
-            <Carousel.Item>
-                <a href="https://www.myntra.com" target="_blank"><img
-                    className="d-block w-100"
-                    src="https://cdn1.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=640,h=360,q=90/ddb/sale/oct20/myntra-sale-Oct2020.jpg"
-                    alt="Myntra"
-                /></a>
-            </Carousel.Item>
-            <Carousel.Item>
-                <a href="https://www.amazon.in" target="_blank"><img
-                    className="d-block w-100"
-                    src="https://cdn3.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=640,h=360,q=80/ddb/sale/oct20/Amazon-GIF-Oct2020-3.jpg"
-                    alt="Amazon"
-                /></a>
-            </Carousel.Item>
-        </Carousel>
+        <div className="row">
+            <Carousel>
+                <Carousel.Item>
+                    <a href="https://www.flipkart.com" target="_blank"><img
+                        className="d-block w-100"
+                        src="https://cdn1.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=640,h=360,q=90/ddb/sale/oct20/Flipakrt-The-Big-Billion-Days-Oct-2020-2.jpg"
+                        alt="Flipkart"
+                    /></a>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <a href="https://www.myntra.com" target="_blank"><img
+                        className="d-block w-100"
+                        src="https://cdn1.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=640,h=360,q=90/ddb/sale/oct20/myntra-sale-Oct2020.jpg"
+                        alt="Myntra"
+                    /></a>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <a href="https://amzn.to/2TcHq9M" target="_blank"><img
+                        className="d-block w-100"
+                        src="https://cdn3.desidime.com/cdn-cgi/image/fit=contain,f=auto,onerror=redirect,w=640,h=360,q=80/ddb/sale/oct20/Amazon-GIF-Oct2020-3.jpg"
+                        alt="Amazon"
+                    /></a>
+                </Carousel.Item>
+            </Carousel>
+        </div>
     );
 }
 
