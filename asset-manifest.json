@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/deals/static/css/main.1c2d210d.chunk.css",
+    "main.css": "/deals/static/css/main.ea626ab2.chunk.css",
     "main.js": "/deals/static/js/main.f952c2fd.chunk.js",
     "main.js.map": "/deals/static/js/main.f952c2fd.chunk.js.map",
     "runtime-main.js": "/deals/static/js/runtime-main.d1d9872e.js",
@@ -9,10 +9,10 @@
     "static/js/2.fa1da530.chunk.js": "/deals/static/js/2.fa1da530.chunk.js",
     "static/js/2.fa1da530.chunk.js.map": "/deals/static/js/2.fa1da530.chunk.js.map",
     "index.html": "/deals/index.html",
-    "precache-manifest.bca4cc413ec7d5be4b69b3412229a495.js": "/deals/precache-manifest.bca4cc413ec7d5be4b69b3412229a495.js",
+    "precache-manifest.0781ce9feb1c4c29c539780f0e7d1d0d.js": "/deals/precache-manifest.0781ce9feb1c4c29c539780f0e7d1d0d.js",
     "service-worker.js": "/deals/service-worker.js",
     "static/css/2.f69748ee.chunk.css.map": "/deals/static/css/2.f69748ee.chunk.css.map",
-    "static/css/main.1c2d210d.chunk.css.map": "/deals/static/css/main.1c2d210d.chunk.css.map",
+    "static/css/main.ea626ab2.chunk.css.map": "/deals/static/css/main.ea626ab2.chunk.css.map",
     "static/js/2.fa1da530.chunk.js.LICENSE.txt": "/deals/static/js/2.fa1da530.chunk.js.LICENSE.txt",
     "static/media/App.css": "/deals/static/media/WorkSans-VariableFont_wght.b2439691.ttf",
     "static/media/font-awesome.min.css": "/deals/static/media/fontawesome-webfont.fee66e71.woff"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.d1d9872e.js",
     "static/css/2.f69748ee.chunk.css",
     "static/js/2.fa1da530.chunk.js",
-    "static/css/main.1c2d210d.chunk.css",
+    "static/css/main.ea626ab2.chunk.css",
     "static/js/main.f952c2fd.chunk.js"
   ]
 }
