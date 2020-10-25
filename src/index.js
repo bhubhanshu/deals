@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import App from './App';
-import Deals from './components/DealComponent';
 import Footer from './components/Footer';
 import * as serviceWorker from './serviceWorker';
+import Loading from './components/LoadingComponent'
 
+const Deals = React.lazy(() => import('./components/DealComponent'));
 ReactDOM.render(
   <React.StrictMode>
-    <Deals />
+    <Suspense fallback={Loading}>
+      <Deals />
+    </Suspense>
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
