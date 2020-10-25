@@ -75,5 +75,19 @@ h1{
   .carousel {
     width:auto;
     height:auto;
+    margin: auto;
+  }
+  #card{
+    width: 150px;
+    height: 190px;
+    font-size: 0.6rem;
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+  .card-img-top{
+    margin: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 190px;
   }
 }
