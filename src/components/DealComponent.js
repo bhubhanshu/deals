@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import Loading from './LoadingComponent';
 import { Card, CardImg, CardBody, CardTitle, Button, CardSubtitle } from 'reactstrap';
-import data from '../webScraper/data.json'
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { fetchDeals } from '../redux/ActionCreators';
+
+const mapStateToProps = state => {
+    return {
+      deals: state.deals
+    }
+}
+
+const mapDispatchToProps = (dispatch) => ({
+    fetchDeals: () => {dispatch(fetchDeals())}
+  });
 
 function RenderDeal(props){
     return(
@@ -21,16 +33,30 @@ function RenderDeal(props){
     );
 }
 
-function Deals(props){
-    return(
-        <div class="row">
-            {data.map((deal) => {
-                return(
-                    RenderDeal(deal = {deal})
-                );
-            })}
-        </div>
-    );
+class Deals extends Component{
+    componentDidMount(){
+        this.props.fetchDeals();
+    }
+    render(){
+        if(this.props.deals.isLoading){
+            return (
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <Loading />
+                    </div>
+                </div>
+            );
+        }
+        return(
+            <div class="row">
+                {this.props.deals.deals.map((deal) => {
+                    return(
+                        RenderDeal(deal = {deal})
+                    );
+                })}
+            </div>
+        );
+    }
 }
 
-export default Deals;
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Deals));;

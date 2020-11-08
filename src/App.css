@@ -72,6 +72,9 @@ h1{
   max-height: 300px;
 }
 @media (max-width: 900px) {
+  h5{
+    font-size: 1rem;
+  }
   .carousel {
     width:auto;
     height:auto;

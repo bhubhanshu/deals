@@ -5,14 +5,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import App from './App';
 import Footer from './components/Footer';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
-import Loading from './components/LoadingComponent'
+import Loading from './components/LoadingComponent';
+import { ConfigureStore } from './redux/configureStore';
+const store = ConfigureStore();
 
 const Deals = React.lazy(() => import('./components/DealComponent'));
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={Loading}>
-      <Deals />
+    <Provider store={store}>
+      <BrowserRouter>
+          <Deals />
+      </BrowserRouter>
+    </Provider>
     </Suspense>
     <Footer />
   </React.StrictMode>,
