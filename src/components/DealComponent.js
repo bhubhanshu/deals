@@ -47,6 +47,17 @@ class Deals extends Component{
                 </div>
             );
         }
+        else if (this.props.deals.errMess) {
+            return (
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h4>{this.props.deals.errMess}</h4>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
         return(
             <div class="row">
                 {this.props.deals.deals.map((deal) => {

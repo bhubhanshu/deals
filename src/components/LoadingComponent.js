@@ -5,7 +5,7 @@ const Loading = () => {
     return(
         <div id="loader">
             <Loader type="Circles" color="#00BFFF" height={80} width={80}/>
-            <p>Loading</p>
+            <p className="text-center">Loading</p>
         </div>
     );
 };
